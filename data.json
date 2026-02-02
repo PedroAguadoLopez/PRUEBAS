@@ -1,0 +1,99 @@
+[
+  {
+    "categoryName": "Frescos",
+    "items": [
+      {
+        "id": 1,
+        "name": "Manzanas Royal Gala",
+        "price": 2.50,
+        "description": "Bolsa de 1kg, origen nacional, dulces y crujientes.",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "name": "Salmón Noruego",
+        "price": 12.95,
+        "description": "Lomo de salmón fresco, rico en Omega 3, bandeja 300g.",
+        "featured": false
+      },
+      {
+        "id": 3,
+        "name": "Aguacates",
+        "price": 3.99,
+        "description": "Malla de 500g, listos para consumir.",
+        "featured": true
+      }
+    ]
+  },
+  {
+    "categoryName": "Despensa",
+    "items": [
+      {
+        "id": 4,
+        "name": "Aceite de Oliva Virgen Extra",
+        "price": 8.50,
+        "description": "Garrafa 1L, extracción en frío.",
+        "featured": true
+      },
+      {
+        "id": 5,
+        "name": "Pasta Italiana",
+        "price": 1.20,
+        "description": "Spaghetti de grano duro, paquete 500g.",
+        "featured": false
+      },
+      {
+        "id": 6,
+        "name": "Arroz Redondo",
+        "price": 1.15,
+        "description": "Ideal para paellas, paquete 1kg.",
+        "featured": false
+      }
+    ]
+  },
+  {
+    "categoryName": "Bebidas",
+    "items": [
+      {
+        "id": 7,
+        "name": "Refresco de Cola",
+        "price": 0.80,
+        "description": "Lata 33cl, sabor original.",
+        "featured": false
+      },
+      {
+        "id": 8,
+        "name": "Cerveza Artesana",
+        "price": 2.50,
+        "description": "Botella 33cl, estilo IPA.",
+        "featured": true
+      },
+      {
+        "id": 9,
+        "name": "Agua Mineral",
+        "price": 0.50,
+        "description": "Botella 1.5L, manantial natural.",
+        "featured": false
+      }
+    ]
+  },
+  {
+    "categoryName": "Limpieza",
+    "items": [
+      {
+        "id": 10,
+        "name": "Detergente Líquido",
+        "price": 5.99,
+        "description": "Para ropa blanca y de color, 30 lavados.",
+        "featured": false
+      },
+      {
+        "id": 11,
+        "name": "Lavavajillas Concentrado",
+        "price": 2.20,
+        "description": "Poder desengrasante, aroma limón.",
+        "featured": false
+      }
+    ]
+  }
+]
