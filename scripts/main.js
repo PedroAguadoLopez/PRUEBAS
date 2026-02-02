@@ -1,6 +1,6 @@
 import { ProductDatabase } from './database/ProductDatabase.js';
-import { HeaderView } from './VHeaderView.js';
-import { ProductView } from './VProductView.js';
+import { HeaderView } from './Views/HeaderView.js';
+import { ProductView } from './Views/ProductView.js';
 
 class Main {
     constructor() {
@@ -35,4 +35,4 @@ class Main {
     }
 }
 
-new Main();
+new Main(); 

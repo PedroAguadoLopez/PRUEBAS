@@ -1,4 +1,4 @@
-import { Product } from '../tProduct.js';
+import { Product } from '../types/product.js';
 import { ProductCategory } from '../types/ProductCategory.js';
 
 export class ProductDatabase {
