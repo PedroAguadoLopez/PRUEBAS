@@ -8,7 +8,20 @@
 </head>
 <body>
     <header id="main-header"></header>
-    <div id="product-list" class="product-grid"></div>
+    
+    <div class="main-layout">
+        <div id="product-list" class="product-grid"></div>
+        
+        <aside class="cart-panel">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <h3>Total: <span id="cart-total">0.00 €</span></h3>
+                <button class="checkout-btn">Comprar</button>
+            </div>
+        </aside>
+    </div>
+
     <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

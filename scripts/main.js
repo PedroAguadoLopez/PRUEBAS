@@ -1,12 +1,16 @@
 import { ProductDatabase } from './database/ProductDatabase.js';
 import { HeaderView } from './Views/HeaderView.js';
 import { ProductView } from './Views/ProductView.js';
+import { Cart } from './types/cart.js';
+import { CartView } from './Views/CartView.js';
 
 class Main {
     constructor() {
         this.categories = [];
         this.headerView = new HeaderView();
         this.productView = new ProductView();
+        this.cart = new Cart();
+        this.cartView = new CartView();
         this.init();
     }
 
@@ -14,6 +18,7 @@ class Main {
         this.categories = await ProductDatabase.getAllData();
         this.headerView.render(this.categories, (target) => this.handleNavigation(target));
         this.handleNavigation('home');
+        this.updateCartDisplay();
     }
 
     handleNavigation(target) {
@@ -31,8 +36,26 @@ class Main {
             }
         }
 
-        this.productView.render(productsToShow);
+        this.productView.render(productsToShow, (product) => this.addToCart(product));
+    }
+
+    addToCart(product) {
+        this.cart.addItem(product);
+        this.updateCartDisplay();
+    }
+
+    removeFromCart(productId) {
+        this.cart.removeItem(productId);
+        this.updateCartDisplay();
+    }
+
+    updateCartDisplay() {
+        this.cartView.render(
+            this.cart.getItems(),
+            this.cart.getTotal(),
+            (id) => this.removeFromCart(id)
+        );
     }
 }
 
-new Main(); 
+new Main();
