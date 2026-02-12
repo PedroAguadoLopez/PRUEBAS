@@ -16,6 +16,10 @@ export class Cart {
         this.items = this.items.filter(item => item.product.id !== productId);
     }
 
+    clear() {
+        this.items = [];
+    }
+
     getTotal() {
         return this.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
     }
